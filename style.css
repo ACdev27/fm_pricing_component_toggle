@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+/* *, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+:root {
+  --very-light-gray-blue: hsl(240, 78%, 98%);
+  --light-gray-blue: hsl(234, 14%, 74%);
+  --gray-blue: hsl(233, 13%, 49%);
+  --dark-gray-blue: hsl(232, 13%, 33%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 1.5rem;
+}
+
+.pricing {
+  border: 1px solid red;
+  box-sizing: border-box;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  background: url('images/bg-top.svg') no-repeat top right, url('images/bg-bottom.svg') no-repeat bottom left;
+  background-color: var(--very-light-gray-blue);
+}
+.pricing__header {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__card {
+/* background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%)); */
+}
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
