@@ -9,7 +9,9 @@
   --very-light-gray-blue: hsl(240, 78%, 98%);
   --light-gray-blue: hsl(234, 14%, 74%);
   --gray-blue: hsl(233, 13%, 49%);
+  --gray-blue-trans: hsla(233, 13%, 49%, 0.5);
   --dark-gray-blue: hsl(232, 13%, 33%);
+  --purple: #6D72DE;
 }
 html {
   font-size: 62.5%;
@@ -26,7 +28,7 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 195px;
+  padding: 0px 25px 110px 25px;
   background: url('images/bg-top.svg') no-repeat top right, url('images/bg-bottom.svg') no-repeat bottom left;
   background-color: var(--very-light-gray-blue);
 }
@@ -49,7 +51,7 @@ body {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 2.8rem;
-  color: var(--gray-blue);
+  color: var(--gray-blue-trans);
 }
 .pricing__toggle {
   position: relative;
@@ -58,6 +60,8 @@ body {
   margin: 0 24px 0 24px;
   border-radius: 16px;
   background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  transition: opacity 200ms;
+  cursor: pointer;
 }
 .pricing__toggle::before {
   content: '';
@@ -66,8 +70,16 @@ body {
   height: 24px;
   position: absolute;
   top: 4px;
-  left: 5px;
+  left: 27px;  /*Annual 5px */
   border-radius: 50%;
+  transition: left 200ms;
+}
+/* Toggle to annual position */
+.pricing--annual .pricing__toggle::before {
+  left: 5px;
+}
+.pricing__toggle:hover {
+  opacity: 0.5;
 }
 
 .pricing__cards {
@@ -81,11 +93,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
   width: 100%;
   max-width: 350px;
   padding: 0 41px;
   background-color: #ffffff;
-  /* background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%)); */
+  box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
 }
 .pricing__card--left-round-corners {
   border-top-left-radius: 10px;
@@ -95,10 +108,11 @@ body {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-
-
-
-
+.pricing__card--professional {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
 
 .pricing__package-type {
   color: var(--gray-blue);
@@ -132,12 +146,12 @@ body {
   line-height: 2.8rem;
   text-align: center;
   color: var(--gray-blue);
-  border-top: 1px solid var(--gray-blue);
+  border-top: 1px solid #979797;
   padding-top: 12px;
   margin-bottom: 12px;
 }
 .pricing__features li:last-child {
-  border-bottom: 1px solid var(--gray-blue);
+  border-bottom: 1px solid #979797;
   padding-bottom: 12px;
 }
 .btn {
@@ -145,23 +159,77 @@ body {
   width: 100%;
   margin: 32px 31px 31px 31px;
   padding: 14px 0;
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   border-radius: 6px;
   color: #ffffff;
   background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   cursor: pointer;
-  font-size: 1.33rem;
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 1.3rem;
   line-height: 1.6rem;
   text-align: center;
   letter-spacing: 1.39286px;
   text-transform: uppercase;
 }
+.btn:hover {
+  background: none;
+  background-color: #ffffff;
+  color: var(--purple);
+  border: 1px solid var(--purple);
+}
+.pricing__card--professional .btn:hover {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
 
+.pricing__card--professional .pricing__package-type,
+.pricing__card--professional .pricing__price,
+.pricing__card--professional .pricing__features li
+{
+  color: #ffffff;
+}
+.pricing__card--professional .btn {
+  color: #6D72DE;
+  background: #ffffff;
+}
 
-
-
-
-.attribution { font-size: 11px; text-align: center; margin-top: 30px; }
+.attribution { font-size: 11px; text-align: center; margin-top: 30px; margin-bottom: 20px; }
 .attribution a { color: hsl(228, 45%, 44%); text-decoration: none; }
 
+@media only screen and (max-width: 930px) {
+  .pricing__price {
+    font-size: 5rem;  /* from 7.2 */
+    margin-top: 5px; /* from 24px */
+  }
+  .pricing__features {
+    margin-top: 10px;  /* from 32px */
+  }
+}
+
+@media only screen and (max-width: 745px) {
+  .pricing {
+    padding-bottom: 45px;
+    background-position: top -35px right -195px, bottom left 270px;
+  }
+  .pricing__cards {
+    flex-direction: column;
+    margin-top: 43px;
+  }
+  .pricing__card {
+    margin-top: 32px;
+    border-radius: 10px;
+  }
+  .pricing__card--professional {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .pricing__price {
+    font-size: 7.2rem; 
+    margin-top: 24x;
+  }
+  .pricing__features {
+    margin-top: 32px; 
+  }
+}

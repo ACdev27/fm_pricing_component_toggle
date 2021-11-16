@@ -1,3 +1,14 @@
+
+
+accessibility for toggle?
+
+transiftion for button? Add new "layer" with :: before over gradient, and use opactiy to fade away?
+
+
+
+
+
+
 # Frontend Mentor - Pricing component with toggle solution
 
 This is a solution to the [Pricing component with toggle challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
@@ -15,8 +26,6 @@ This is a solution to the [Pricing component with toggle challenge on Frontend M
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
