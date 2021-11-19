@@ -22,7 +22,7 @@ function toggleClicked() {
   }
 }
 
-// Update prices based on time period selected
+// Update prices based on time period selected with toggle switch
 function setPrices(time) {
   if (time == 'annual') {
     basicPrice.innerHTML = '<span>$</span>199.99';
