@@ -42,11 +42,17 @@ body {
 .pricing__selector {
   display: flex;
   flex-direction: row;
-  margin: 40px 0 0 0;
+  margin: 37px 0 0 0;
+  padding: 6px;              
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 2.8rem;
   color: var(--gray-blue-trans);
+  cursor: pointer;
+}
+.pricing__selector:focus {
+  outline: 2px dashed #6D72DE;
+  color: var(--dark-gray-blue);
 }
 .pricing__toggle {
   position: relative;
@@ -64,7 +70,7 @@ body {
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 4px;
+  top: 3px;
   left: 27px;  /*Annual 5px */
   border-radius: 50%;
   transition: left 200ms;
@@ -82,7 +88,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 64px 0 0 0;
+  margin: 61px 0 0 0;
 }
 .pricing__card {
   display: flex;
