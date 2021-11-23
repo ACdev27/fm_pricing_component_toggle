@@ -32,7 +32,7 @@ function toggleClicked() {
   slideToggle();
 }
 
-// Updated positoin of toggle. Make call to update prices.
+// Updated position of toggle. Make call to update prices.
 function slideToggle() {
   if (section.classList.contains('pricing--annual')) {
     section.classList.remove('pricing--annual');
