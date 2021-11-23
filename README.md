@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-Coding the toggle switch element to work with keyboard input taught me several thing about adding website accessibilty to a website.
+Coding the toggle switch element to work with keyboard input taught me several things about adding website accessibilty to a website.
 
 
 ## Author
