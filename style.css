@@ -70,7 +70,7 @@ body {
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 3px;
+  top: 4px;
   left: 27px;  /*Annual 5px */
   border-radius: 50%;
   transition: left 200ms;
@@ -97,7 +97,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   max-width: 350px;
-  padding: 0 41px;
+  padding: 0 30px;
   background-color: #ffffff;
   box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
 }
@@ -158,7 +158,7 @@ body {
 .btn {
   display: inline-block;
   width: 100%;
-  margin: 18px 50px 29px 50px;
+  margin: 18px 31px 29px 31px;
   padding: 12px 14px;
   border: 1px solid transparent;
   outline: none;
