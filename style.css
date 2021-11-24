@@ -112,7 +112,7 @@ body {
 .pricing__card--professional {
   padding-top: 25px;
   padding-bottom: 25px;
-  background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 
 .pricing__package-type {
