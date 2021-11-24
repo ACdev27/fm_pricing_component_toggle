@@ -158,8 +158,8 @@ body {
 .btn {
   display: inline-block;
   width: 100%;
-  margin: 18px 31px 29px 31px;
-  padding: 14px 0;
+  margin: 18px 50px 29px 50px;
+  padding: 12px 14px;
   border: 1px solid transparent;
   outline: none;
   border-radius: 6px;
