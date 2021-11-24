@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/pricing-component-with-toggle-y5pgG1Jhk)
 - Live Site URL: [Live site URL here](https://eager-johnson-4ef17b.netlify.app/)
 
 ## My process
